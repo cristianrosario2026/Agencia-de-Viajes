@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* 🔥 ESTO LO HACE RESPONSIVE */
+}
+
+/* 📱 CELULAR */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+}
+
+/* 📲 TABLET */
+@media (max-width: 900px) {
+
+    .contenedor {
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+}
