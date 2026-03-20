@@ -26,7 +26,8 @@
     /* CARDS */
     .cards {
         display: flex;
-        flex-wrap: wrap; /* 🔥 IMPORTANTE */
+        flex-wrap: wrap;
+        /* 🔥 IMPORTANTE */
         justify-content: center;
     }
 
@@ -41,86 +42,32 @@
 }
 
 
-/* =========================
-   📱 CELULAR (≤ 600px)
-========================= */
-@media (max-width: 600px) {
+/* 📱 CELULAR */
+@media (max-width: 768px) {
 
-    /* NAV */
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
+    #contenido,
+    #lateral {
+        float: none;
+        /* 🔥 QUITA EL FLOAT */
         width: 100%;
-        text-align: center;
-        gap: 10px;
-        margin-top: 10px;
+        /* 🔥 OCUPA TODO */
     }
 
-    nav ul li {
-        width: 100%;
+    #lateral {
+        border-left: none;
+        border-top: 2px solid #888;
+        margin-top: 20px;
     }
 
-    /* HERO */
-    .hero {
-        height: auto; /* 🔥 mejor que 60vh */
-        padding: 40px 20px;
+    #contenido {
+        padding: 15px;
     }
 
-    .hero h1,
-    .hero h2 {
-        font-size: 22px;
-    }
-
-    /* CONTENEDOR */
-    .container {
-        width: 95%;
-    }
-
-    /* SECCIONES */
-    .section {
-        padding: 30px 15px;
-    }
-
-    /* CARDS */
-    .cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    /* IMÁGENES */
-    img {
-        width: 100%;
+    #encabezado {
         height: auto;
     }
 
-    /* FORMULARIO */
-    form {
-        padding: 15px;
-    }
-
-    .input-group input,
-    .input-group textarea {
-        font-size: 14px;
-    }
-
-    /* BOTÓN */
-    button {
-        padding: 14px;
-        font-size: 16px;
-    }
-
-    /* FOOTER */
-    footer {
-        padding: 15px;
-        font-size: 14px;
+    #contenedor {
+        width: 95%;
     }
 }
