@@ -2,17 +2,16 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure-Agencia de viajes</title>
-    <meta name="description" content="Agencia de viajes Especializada en Experiencias Unicas">
-    <meta name="keywords" content="viajes, paisajes, Mexico, planes, promociones">
-    <link rel="icon" href="../IMAGENES/Logo.jpg" type="IMAGENES/jpg">
+    <meta name="description" content="Agencia de viajes especiales en experiencias unicas">
+    <meta name="kerwords" content="viajes, paisajes, México, planes, promociones">
+    <link rel="icon" href="../IMAGENES/Logo.jpg" type="image/jpg">
     <link rel="stylesheet" href="../CSS/main.css" type="text/css">
     <link rel="stylesheet" href="../CSS/menu.css" type="text/css">
     <link rel="stylesheet" href="../CSS/forms.css" type="text/css">
-    <link rel="stylesheet" href="../CSS/responsive.css" type="text/css">
+    <title>"Agencias de viajes"</title>
 </head>
 
 <body>
@@ -32,27 +31,25 @@
         </div>
         <div id="contenido">
             <br>
-            <form action="https://formsubmit.co/cristianrosarioalarconalarcon@gmail.com" method="POST">
+            <form id="contacto" method="post" action="sendMail.php">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Nombre"><br>
 
-            <label>Nombre:</label>
-            <input type="text" name="nombre" placeholder="Nombre"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="xxxxx@hotmail.com"><br>
 
-            <label>Email:</label>
-            <input type="email" name="correo" placeholder="Correo"><br>
+                <label for="telefono">Telefono:</label>
+                <input type="number" name="telefono" placeholder="Teléfono"><br>
 
-            <label>Telefono:</label>
-            <input type="number" name="telefono" placeholder="Teléfono"><br>
+                <label for="celular">Celular:</label>
+                <input type="number" name="celular" placeholder="Celular"><br>
 
-            <label>Celular:</label>
-            <input type="number" name="celular" placeholder="Celular"><br>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="ciudad" placeholder="Ciudad"><br>
 
-            <label>Ciudad:</label>
-            <input type="text" name="ciudad" placeholder="Ciudad"><br>
-
-            <label>Mensaje:</label>
-            <textarea name="mensaje" cols="30" rows="20" placeholder="Mensaje"></textarea>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="submit" class="submit" type="submit" value="Enviar"><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" cols="30" rows="20"></textarea>
+                <input type="submit" class="submit" type="submit" value="Enviar"><br>
             </form>
         </div>
 
