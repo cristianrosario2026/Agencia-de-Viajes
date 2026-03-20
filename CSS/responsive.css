@@ -1,73 +1,58 @@
-/* =========================
-   📱 TABLET (≤ 900px)
-========================= */
-@media (max-width: 900px) {
-
-    /* NAV */
-    nav {
-        padding: 10px;
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-
-    /* HERO */
-    .hero h1,
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    /* SECCIONES */
-    .section {
-        padding: 40px 20px;
-    }
-
-    /* CARDS */
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        /* 🔥 IMPORTANTE */
-        justify-content: center;
-    }
-
-    .card {
-        width: 45%;
-    }
-
-    /* FORM */
-    form {
-        max-width: 100%;
-    }
-}
-
-
-/* 📱 CELULAR */
+/* 📱 RESPONSIVE COMPLETO */
 @media (max-width: 768px) {
 
+    /* CONTENEDOR */
+    #contenedor {
+        width: 95%;
+    }
+
+    /* HEADER */
+    #encabezado {
+        height: auto;
+        text-align: center;
+    }
+
+    /* CONTENIDO Y LATERAL */
     #contenido,
     #lateral {
         float: none;
-        /* 🔥 QUITA EL FLOAT */
         width: 100%;
-        /* 🔥 OCUPA TODO */
+        padding: 10px;
     }
 
+    /* LATERAL */
     #lateral {
         border-left: none;
         border-top: 2px solid #888;
         margin-top: 20px;
     }
 
-    #contenido {
-        padding: 15px;
+    /* PROMO */
+    #contenido .promo {
+        width: 100%;
     }
 
-    #encabezado {
+    /* IMÁGENES */
+    img {
+        max-width: 100%;
         height: auto;
     }
 
-    #contenedor {
-        width: 95%;
+    /* TEXTO */
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    #pie {
+        text-align: center;
     }
 }
