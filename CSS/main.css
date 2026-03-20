@@ -19,8 +19,8 @@ body {
 
 #contenedor {
     max-width: 960px;
-    width: 95%;
-    margin: 30px auto;
+    width: 100%;
+    margin: 0 auto;
     background-color: #FFF;
 }
 
